@@ -56,7 +56,7 @@ Why: spaCy's small model tagged tool names as people ("Kafka" 10 times, "Prometh
 | NER backstop on 24 held-out sentences, names not in the directory ([ner_holdout.jsonl](redaction/ner_holdout.jsonl)) | recall **0.94** (16/17, missed "Chloe Dubois"), precision 1.00 on 9 sentences full of tool names. Measured once, not tuned against |
 
 ## Retrieval results (first run, 2026-11-24)
-66 scored questions (answerable + multi-doc; 52 dev, 14 holdout). Relevance is labelled per document, so all chunking
+70 scored questions (answerable + multi-doc; 52 dev, 18 holdout). Relevance is labelled per document, so all chunking
 strategies are scored on the same labels. Embeddings: `BAAI/bge-small-en-v1.5` (384 d, local ONNX).
 
 | Chunking | Mode | R@1 | R@3 | R@5 | MRR | multi-doc R@5 |
@@ -72,7 +72,7 @@ Dev split shown; full output in [evals/results/](evals/results/). Early observat
 - At equal chunk size, heading-aware beats structure-blind windows (R@3 0.85 vs 0.79, vector).
 - Hybrid is not a free win: it helps whole-doc chunks and hurts small fixed chunks, where lexical search is weak.
 - The comparison with whole-doc chunks is not yet fair: 5 whole docs carry ~3x the text of 5 heading chunks. The grid will compare at an equal token budget.
-- Small sample: 0.04 on ~50 questions is about 2 questions.
+- Small sample: 0.04 on 52 dev questions is about 2 questions.
 - **The poisoned doc reaches the top 3** for "how do I reset consumer offsets to fix lag" (vector). Retrieval cannot keep injected text out, so the answer prompt has to treat retrieved text as untrusted data.
 
 ## License
