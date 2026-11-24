@@ -1,0 +1,24 @@
+{"text": "Ping Oliver Bennett if the canary aborts twice.", "names": ["Oliver Bennett"]}
+{"text": "Escalated to Fatima Zahra Idrissi at 03:10.", "names": ["Fatima Zahra Idrissi"]}
+{"text": "Handover from Lucas Moreau to Hannah Schmidt went fine.", "names": ["Lucas Moreau", "Hannah Schmidt"]}
+{"text": "Rahul Mehta restarted kafka-3 after the disk alert.", "names": ["Rahul Mehta"]}
+{"text": "The incident commander was Chloe Dubois.", "names": ["Chloe Dubois"]}
+{"text": "Call Kwame Mensah, he owns the ledger service.", "names": ["Kwame Mensah"]}
+{"text": "Ask Isabella Rossi for access to the prod approval group.", "names": ["Isabella Rossi"]}
+{"text": "Notes taken by Noah Fischer during the drill.", "names": ["Noah Fischer"]}
+{"text": "Yuki Tanaka approved the rollback PR.", "names": ["Yuki Tanaka"]}
+{"text": "Thanks to Ana Lucia Ferreira for the Grafana fix.", "names": ["Ana Lucia Ferreira"]}
+{"text": "Liam O'Connor is the secondary on-call this week.", "names": ["Liam O'Connor"]}
+{"text": "Paged Zainab Musa because the burn rate hit 30x.", "names": ["Zainab Musa"]}
+{"text": "Customer complaint forwarded by Ethan Clarke.", "names": ["Ethan Clarke"]}
+{"text": "Shadowing: Sofia Hernández and Arjun Nair.", "names": ["Sofia Hernández", "Arjun Nair"]}
+{"text": "Contact Emma Johansson before force-unlocking state.", "names": ["Emma Johansson"]}
+{"text": "Restart the consumer group with Spring Kafka settings unchanged.", "names": []}
+{"text": "Argo Rollouts aborted and Kyverno blocked the retry.", "names": []}
+{"text": "Open Grafana Explore and query Loki for the trace id.", "names": []}
+{"text": "Docker Desktop needs 6 GB for the kind cluster.", "names": []}
+{"text": "Terraform Cloud holds the state lock until the run ends.", "names": []}
+{"text": "Prometheus Alertmanager routed the page to the payments receiver.", "names": []}
+{"text": "Sealed Secrets could not decrypt after the rebuild.", "names": []}
+{"text": "GitHub Actions failed on the Trivy scan.", "names": []}
+{"text": "Payment Processor instances rebalanced after the kill.", "names": []}

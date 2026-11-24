@@ -1,0 +1,5954 @@
+{
+ "date": "2026-11-24",
+ "n_scored": 70,
+ "configs": [
+  {
+   "index": "fixed512:bge-small",
+   "mode": "vector",
+   "dev": {
+    "recall@1": 0.66,
+    "recall@3": 0.891,
+    "recall@5": 0.917,
+    "mrr": 0.861,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.806,
+    "recall@3": 0.944,
+    "recall@5": 0.944,
+    "mrr": 0.88,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.417,
+    "recall@3": 0.738,
+    "recall@5": 0.833,
+    "mrr": 0.929,
+    "n": 14
+   },
+   "p50_ms": 6.7,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 0.5,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.1,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "fixed512:bge-small",
+   "mode": "lexical",
+   "dev": {
+    "recall@1": 0.603,
+    "recall@3": 0.821,
+    "recall@5": 0.923,
+    "mrr": 0.811,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.75,
+    "recall@3": 0.944,
+    "recall@5": 0.944,
+    "mrr": 0.86,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.417,
+    "recall@3": 0.762,
+    "recall@5": 0.857,
+    "mrr": 0.905,
+    "n": 14
+   },
+   "p50_ms": 0.5,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.125,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.6666666666666666,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "fixed512:bge-small",
+   "mode": "hybrid",
+   "dev": {
+    "recall@1": 0.67,
+    "recall@3": 0.881,
+    "recall@5": 0.933,
+    "mrr": 0.873,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.75,
+    "recall@3": 0.944,
+    "recall@5": 1.0,
+    "mrr": 0.866,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.452,
+    "recall@3": 0.774,
+    "recall@5": 0.893,
+    "mrr": 0.964,
+    "n": 14
+   },
+   "p50_ms": 6.6,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 0.5,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "fixed128:bge-small",
+   "mode": "vector",
+   "dev": {
+    "recall@1": 0.679,
+    "recall@3": 0.785,
+    "recall@5": 0.888,
+    "mrr": 0.844,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.806,
+    "recall@3": 0.944,
+    "recall@5": 0.944,
+    "mrr": 0.898,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.345,
+    "recall@3": 0.631,
+    "recall@5": 0.798,
+    "mrr": 0.845,
+    "n": 14
+   },
+   "p50_ms": 5.8,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 0.5,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "fixed128:bge-small",
+   "mode": "lexical",
+   "dev": {
+    "recall@1": 0.564,
+    "recall@3": 0.67,
+    "recall@5": 0.776,
+    "mrr": 0.739,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.806,
+    "recall@3": 0.833,
+    "recall@5": 0.944,
+    "mrr": 0.858,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.417,
+    "recall@3": 0.56,
+    "recall@5": 0.667,
+    "mrr": 0.875,
+    "n": 14
+   },
+   "p50_ms": 0.5,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.5,
+     "mrr": 0.25,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.125,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.1,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "fixed128:bge-small",
+   "mode": "hybrid",
+   "dev": {
+    "recall@1": 0.66,
+    "recall@3": 0.795,
+    "recall@5": 0.843,
+    "mrr": 0.831,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.861,
+    "recall@3": 0.944,
+    "recall@5": 0.944,
+    "mrr": 0.923,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.417,
+    "recall@3": 0.667,
+    "recall@5": 0.702,
+    "mrr": 0.903,
+    "n": 14
+   },
+   "p50_ms": 6.8,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 0.5,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.1111111111111111,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "heading:bge-small",
+   "mode": "vector",
+   "dev": {
+    "recall@1": 0.728,
+    "recall@3": 0.853,
+    "recall@5": 0.926,
+    "mrr": 0.901,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.806,
+    "recall@3": 0.833,
+    "recall@5": 0.944,
+    "mrr": 0.866,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.452,
+    "recall@3": 0.667,
+    "recall@5": 0.798,
+    "mrr": 0.952,
+    "n": 14
+   },
+   "p50_ms": 6.3,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "heading:bge-small",
+   "mode": "lexical",
+   "dev": {
+    "recall@1": 0.612,
+    "recall@3": 0.747,
+    "recall@5": 0.804,
+    "mrr": 0.795,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.806,
+    "recall@3": 0.944,
+    "recall@5": 0.944,
+    "mrr": 0.88,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.452,
+    "recall@3": 0.631,
+    "recall@5": 0.702,
+    "mrr": 0.929,
+    "n": 14
+   },
+   "p50_ms": 0.5,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.125,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.1,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.1111111111111111,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  },
+  {
+   "index": "heading:bge-small",
+   "mode": "hybrid",
+   "dev": {
+    "recall@1": 0.689,
+    "recall@3": 0.891,
+    "recall@5": 0.926,
+    "mrr": 0.879,
+    "n": 52
+   },
+   "holdout": {
+    "recall@1": 0.806,
+    "recall@3": 0.889,
+    "recall@5": 0.944,
+    "mrr": 0.882,
+    "n": 18
+   },
+   "multi_doc": {
+    "recall@1": 0.452,
+    "recall@3": 0.738,
+    "recall@5": 0.798,
+    "mrr": 0.952,
+    "n": 14
+   },
+   "p50_ms": 6.3,
+   "per_question": [
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q001",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q002",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q003",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q004",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q005",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q006",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q007",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q008",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.125,
+     "id": "q009",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q010",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q011",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 0.3333333333333333,
+     "id": "q012",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q013",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q014",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q015",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.25,
+     "id": "q016",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q017",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 1.0,
+     "mrr": 0.2,
+     "id": "q018",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q019",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q020",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q021",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q022",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q023",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q024",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q025",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 0.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "id": "q026",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q027",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q028",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q029",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q030",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q031",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q032",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q033",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q034",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.5,
+     "id": "q035",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q036",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q037",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q038",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q039",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q040",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q041",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q042",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q043",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q044",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q045",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.3333333333333333,
+     "recall@3": 0.3333333333333333,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "id": "q046",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q047",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q048",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q049",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q050",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q051",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q052",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q053",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q054",
+     "type": "multi-doc",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q055",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q056",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q057",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q058",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 0.5,
+     "recall@3": 0.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "id": "q059",
+     "type": "multi-doc",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q060",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q061",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q062",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q063",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q064",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q065",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q066",
+     "type": "answerable",
+     "split": "holdout"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q067",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q068",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 0.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 0.3333333333333333,
+     "id": "q069",
+     "type": "answerable",
+     "split": "dev"
+    },
+    {
+     "recall@1": 1.0,
+     "recall@3": 1.0,
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "id": "q070",
+     "type": "answerable",
+     "split": "dev"
+    }
+   ]
+  }
+ ],
+ "abstention": [
+  {
+   "index": "fixed512:bge-small",
+   "answerable_min": 0.651,
+   "answerable_p10": 0.707,
+   "unanswerable_max": 0.715,
+   "best_threshold": 0.677,
+   "best_accuracy": 0.962
+  },
+  {
+   "index": "fixed128:bge-small",
+   "answerable_min": 0.694,
+   "answerable_p10": 0.724,
+   "unanswerable_max": 0.724,
+   "best_threshold": 0.694,
+   "best_accuracy": 0.974
+  },
+  {
+   "index": "heading:bge-small",
+   "answerable_min": 0.682,
+   "answerable_p10": 0.726,
+   "unanswerable_max": 0.732,
+   "best_threshold": 0.682,
+   "best_accuracy": 0.987
+  }
+ ]
+}

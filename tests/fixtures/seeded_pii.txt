@@ -1,0 +1,19 @@
+# Every PII string deliberately seeded into corpus/. None may appear in the index or in answers.
+Priya Raman
+priya.raman@example.com
++44 7700 900123
+Daniel Okafor
+daniel.okafor@example.com
+Mei Lin Chen
+meilin.chen@example.com
+020 7946 0958
+Tomás Herrera
+tomas.herrera@example.com
++1 415 555 0142
+Aisha Khan
+aisha.khan@example.com
++44 7700 900789
+Sam Whitfield
+sam.whitfield@example.com
+Grace Adeyemi
+07700 900456

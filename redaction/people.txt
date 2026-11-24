@@ -1,0 +1,9 @@
+# Synthetic staff directory. In production this would be synced from the HR / on-call directory at
+# ingest time, not committed. Names here are redacted in any phrasing; NER is the backstop for others.
+Priya Raman
+Daniel Okafor
+Mei Lin Chen
+Tomás Herrera
+Aisha Khan
+Sam Whitfield
+Grace Adeyemi
