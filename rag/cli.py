@@ -52,16 +52,21 @@ def ask(
     mode: Annotated[str, typer.Option(help="vector | lexical | hybrid")] = "hybrid",
     index: Annotated[str, typer.Option(help="strategy:embedder")] = "heading:bge-small",
     show_context: bool = False,
+    allow_unreviewed: Annotated[bool, typer.Option(help="also retrieve documents flagged as unreviewed")] = False,
+    guard: Annotated[bool, typer.Option(help="withhold answers that recommend commands absent from reviewed runbooks")] = True,
 ):
     """Answer a question from the runbooks, citing the documents used."""
     from . import answer as answer_mod
     from .llm import get_llm
-    a = answer_mod.ask(store.connect(), question, get_llm(model), index, mode, k)
+    a = answer_mod.ask(store.connect(), question, get_llm(model), index, mode, k,
+                      allow_unreviewed=allow_unreviewed, use_guard=guard)
     if show_context:
         typer.echo(answer_mod.build_context(a.hits) + "\n" + "-" * 60)
     typer.echo(a.text + "\n")
     retrieved = ", ".join(dict.fromkeys(h.doc_id + (" [UNTRUSTED]" if h.poisoned else "") for h in a.hits))
     typer.echo(f"retrieved: {retrieved}")
+    if a.withheld:
+        typer.echo(f"guard: blocked {len(a.blocked)} token(s) not found in reviewed runbooks")
     if a.unknown_citations:
         typer.echo(f"WARNING: cited documents that were not retrieved: {', '.join(a.unknown_citations)}")
     c = a.completion

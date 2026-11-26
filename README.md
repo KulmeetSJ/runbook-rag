@@ -16,7 +16,9 @@ retrieval and answer quality measured on a hand-labelled golden set, plus safety
 - [x] Retrieval: vector, lexical (PostgreSQL full-text), hybrid (reciprocal rank fusion)
 - [x] Retrieval evals: recall@1/3/5 and MRR on an 83-item golden set with a held-out split
 - [x] Golden set human review (83 items, `reviewed: true`)
-- [ ] Cited answers with Claude (`rag ask`), MCP server
+- [x] Cited answers (`rag ask`): local `qwen3:8b` via Ollama (zero cost); Claude Haiku 5.5 / Sonnet 5.5 supported, not benchmarked
+- [x] Injection defence in code: unreviewed docs quarantined + output guard (commands must exist in reviewed runbooks)
+- [ ] MCP server
 - [ ] Answer evals: faithfulness (LLM judge, calibrated on hand grades), citation accuracy, abstention, injection
 - [ ] CI eval gate on PRs
 

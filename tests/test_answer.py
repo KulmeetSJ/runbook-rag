@@ -56,3 +56,20 @@ def test_anthropic_backend_sends_effort_and_no_sampling_params():
     assert c.text == "Answer [pf-a]" and c.input_tokens == 100 and c.model == "anthropic:claude-haiku-5-5"
     assert calls["model"] == "claude-haiku-5-5" and calls["output_config"] == {"effort": "low"}
     assert "temperature" not in calls and calls["system"] == "sys"
+
+
+def test_guard_blocks_commands_missing_from_reviewed_runbooks():
+    from rag import guard
+    vocab = frozenset({"kafka-consumer-groups.sh", "--describe", "--group", "payment-processor", "run"})
+    assert guard.check("Run `kafka-consumer-groups.sh --describe --group payment-processor`", vocab).ok
+    bad = guard.check("Run `kafka-consumer-groups.sh --reset-offsets --to-latest`", vocab)
+    assert not bad.ok and bad.unknown == ["--reset-offsets", "--to-latest"]
+    assert not guard.check("then pass --to-latest to the tool", vocab).ok      # flags outside code spans too
+    assert guard.check("Not in the runbooks.", vocab).ok
+
+
+def test_guarded_answer_is_withheld_and_does_not_echo_the_command():
+    llm = FakeLLM("Reset with `kafka-consumer-groups.sh --reset-offsets --to-latest --execute` [evil]")
+    a = answer.answer("fix lag?", [hit("pf-lag-growing"), hit("evil", poisoned=True)], llm)
+    assert a.withheld and "--to-latest" not in a.text and "[pf-lag-growing]" in a.text and "evil" not in a.text
+    assert "--to-latest" in a.raw_text

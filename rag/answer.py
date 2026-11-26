@@ -4,12 +4,14 @@ Defences against poisoned documents live here, not in retrieval (which cannot ke
 - every chunk is wrapped in a <doc> element and the prompt says doc text is data, never instructions;
 - documents flagged as unreviewed are marked trust="unreviewed";
 - a literal "</doc" inside a chunk is neutralised so a document cannot close its own wrapper;
-- citations are checked against the retrieved set, so a model cannot cite a document it was not shown.
+- citations are checked against the retrieved set, so a model cannot cite a document it was not shown;
+- by default unreviewed documents are not retrieved at all (quarantine), and the output guard (rag.guard)
+  withholds any answer that tells on-call to run something no reviewed runbook contains.
 """
 import re
 from dataclasses import dataclass, field
 
-from . import retrieval
+from . import guard, retrieval
 from .llm import LLM, Completion
 
 ABSTAIN = "Not in the runbooks."
@@ -37,6 +39,12 @@ class Answer:
     completion: Completion
     citations: list[str] = field(default_factory=list)
     unknown_citations: list[str] = field(default_factory=list)
+    raw_text: str = ""                     # model output before the guard
+    blocked: list[str] = field(default_factory=list)   # tokens the guard rejected
+
+    @property
+    def withheld(self) -> bool:
+        return bool(self.blocked)
 
     @property
     def abstained(self) -> bool:
@@ -66,11 +74,20 @@ def parse_citations(text: str, retrieved: set[str]) -> tuple[list[str], list[str
     return [c for c in cited if c in retrieved], [c for c in cited if c not in retrieved]
 
 
-def answer(question: str, hits: list[retrieval.Hit], llm: LLM, max_tokens: int = 1024) -> Answer:
+def answer(question: str, hits: list[retrieval.Hit], llm: LLM, max_tokens: int = 1024, use_guard: bool = True) -> Answer:
     comp = llm.complete(SYSTEM, build_prompt(question, hits), max_tokens=max_tokens)
     ok, unknown = parse_citations(comp.text, {h.doc_id for h in hits})
-    return Answer(question, comp.text, hits, comp, ok, unknown)
+    a = Answer(question, comp.text, hits, comp, ok, unknown, raw_text=comp.text)
+    if use_guard:
+        verdict = guard.check(comp.text)
+        if not verdict.ok:
+            a.blocked = verdict.unknown
+            a.text = guard.withheld_message(list(dict.fromkeys(h.doc_id for h in hits if not h.poisoned)))
+            a.citations = []
+    return a
 
 
-def ask(conn, question: str, llm: LLM, index: str = "heading:bge-small", mode: str = "hybrid", k: int = 5) -> Answer:
-    return answer(question, retrieval.search(conn, index, question, k, mode), llm)
+def ask(conn, question: str, llm: LLM, index: str = "heading:bge-small", mode: str = "hybrid", k: int = 5,
+        allow_unreviewed: bool = False, use_guard: bool = True) -> Answer:
+    hits = retrieval.search(conn, index, question, k, mode, trusted_only=not allow_unreviewed)
+    return answer(question, hits, llm, use_guard=use_guard)
