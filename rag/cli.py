@@ -73,6 +73,123 @@ def ask(
     typer.echo(f"{c.model}: {c.input_tokens} in / {c.output_tokens} out tokens, {c.ms} ms")
 
 
+@app.command("eval-answers")
+def eval_answers(
+    model: Annotated[str, typer.Option(help="answer model")] = "ollama:qwen3:8b",
+    judge_model: Annotated[str, typer.Option(help="judge model; 'none' skips the correctness judge")] = "ollama:qwen3:8b",
+    config: Annotated[list[str], typer.Option(help="prompt-only | defended; repeatable")] = ["prompt-only", "defended"],
+    replay: Annotated[bool, typer.Option(help="use cached completions only (CI); fails if a prompt changed")] = False,
+    out: str = "",
+):
+    """Answer every golden question and score abstention, citations, injection and (judged) correctness."""
+    import datetime
+    import json
+
+    from . import answer_evals, evals
+    from .llm import CachedLLM, OllamaLLM, get_llm
+    inner = None if replay else get_llm(model)
+    llm = CachedLLM(inner, answer_evals.CACHE, replay_only=replay, name=model)
+    judge = None
+    if judge_model != "none":
+        jinner = None
+        if not replay:
+            jinner = OllamaLLM(judge_model.split(":", 1)[1], json_format=True) if judge_model.startswith("ollama:") \
+                else get_llm(judge_model)
+        judge = CachedLLM(jinner, answer_evals.CACHE, replay_only=replay, name=f"judge:{judge_model}")
+    golden = evals.load_golden()
+    res = answer_evals.run(store.connect(), golden, llm, judge, config, progress=typer.echo)
+    hdr = f"{'config':12} | answered cites-gold | correct dev   holdout     | abstain ok | injection leaks | withheld | p50 ms"
+    typer.echo(hdr)
+    for name, r in res.items():
+        s = r["summary"]
+        typer.echo(f"{name:12} | {s['answered']:.2f}     {s['cites_gold']:.2f}      | "
+                   f"{s.get('correctness_dev', float('nan')):.2f} ({s.get('correct_dev', '-')}) "
+                   f"{s.get('correctness_holdout', float('nan')):.2f} ({s.get('correct_holdout', '-')}) | "
+                   f"{s['abstain_ok']:.2f}       | {s['injection_violations']}/{s['injection_n']}             | "
+                   f"{s['withheld_answerable']:8} | {s['p50_ms']}")
+    typer.echo(f"model calls: answers {llm.misses} new / {llm.hits} cached"
+               + (f", judge {judge.misses} new / {judge.hits} cached" if judge else ""))
+    date = datetime.date.today().isoformat()
+    payload = {"date": date, "model": model, "judge": judge_model, "fingerprint": answer_evals.fingerprint(),
+               "configs": res}
+    path = out or f"evals/results/answers-{model.replace(':', '_').replace('/', '_')}-{date}.json"
+    if not replay:
+        Path(path).write_text(json.dumps(payload, indent=1, ensure_ascii=False))
+        typer.echo(f"saved {path}")
+    return payload
+
+
+@app.command()
+def gate(thresholds: str = "evals/gate.json"):
+    """CI gate: live retrieval eval + committed answer-eval results, checked against thresholds.
+
+    Fails when retrieval drops below its floor, when the committed answer results are stale (prompts, golden
+    set, corpus or retrieval code changed since they were produced), when they miss a threshold, or when the
+    current output guard no longer blocks a recorded unsafe raw answer."""
+    import json
+
+    from . import answer_evals, evals, guard
+    cfg = json.loads(Path(thresholds).read_text())
+    failures: list[str] = []
+
+    def check(name, value, op, limit):
+        ok = value is not None and (value >= limit if op == ">=" else value <= limit)
+        typer.echo(f"  {'PASS' if ok else 'FAIL'}  {name}: {value} (need {op} {limit})")
+        if not ok:
+            failures.append(name)
+
+    typer.echo("retrieval (live):")
+    conn = store.connect()
+    golden = evals.load_golden()
+    scored = [g for g in golden if g["type"] in ("answerable", "multi-doc")]
+    r = cfg["retrieval"]
+    res = evals.eval_config(conn, r["index"], r["mode"], scored)
+    for split in ("dev", "holdout"):
+        for metric, limit in r[split].items():
+            check(f"{split} {metric}", res[split][metric], ">=", limit)
+
+    a = cfg["answers"]
+    data = json.loads(Path(a["results"]).read_text())
+    typer.echo(f"answers ({a['results']}):")
+    fp = answer_evals.fingerprint()
+    check("results are fresh (fingerprint matches)", int(data.get("fingerprint") == fp), ">=", 1)
+    golden_by_id = {g["id"]: g for g in golden}
+    for conf, limits in a["configs"].items():
+        s = data["configs"][conf]["summary"]
+        for metric, (op, limit) in limits.items():
+            check(f"{conf} {metric}", s.get(metric), op, limit)
+    leaks = 0
+    for row in data["configs"]["defended"]["per_question"]:
+        g = golden_by_id.get(row["id"], {})
+        if g.get("must_not_contain") and not guard.check(row["raw_answer"]).ok:
+            continue                       # the current guard still withholds it
+        shown = row["raw_answer"]
+        leaks += any(x.lower() in shown.lower() for x in g.get("must_not_contain", []))
+    check("defended: recorded raw outputs leaking past the current guard", leaks, "<=", 0)
+    if failures:
+        typer.echo(f"GATE FAILED: {len(failures)} check(s)")
+        if "results are fresh (fingerprint matches)" in failures:
+            typer.echo("  answers are stale: run `rag eval-answers` locally and commit evals/results + evals/cache")
+        raise typer.Exit(1)
+    typer.echo("GATE PASSED")
+
+
+@app.command("export-grading")
+def export_grading(results: str, out: str = "evals/hand_grades.csv", n: int = 30):
+    """Write a sample of answers for hand grading (the judge's verdicts are hidden)."""
+    from . import answer_evals
+    typer.echo(f"wrote {answer_evals.export_for_grading(Path(results), Path(out), n)} rows to {out}")
+
+
+@app.command("judge-agreement")
+def judge_agreement(results: str, grades: str = "evals/hand_grades.csv"):
+    """Compare the LLM judge with your hand grades: exact agreement, Cohen's kappa, pass/fail agreement."""
+    import json
+
+    from . import answer_evals
+    typer.echo(json.dumps(answer_evals.agreement(Path(results), Path(grades)), indent=1))
+
+
 @app.command()
 def stats():
     """List the indexes in the store."""

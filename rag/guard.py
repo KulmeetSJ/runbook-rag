@@ -20,7 +20,7 @@ from . import corpus
 
 FENCE = re.compile(r"```[^\n]*\n(.*?)```", re.S)
 INLINE = re.compile(r"`([^`\n]+)`")
-FLAG = re.compile(r"(?<![\w-])--[a-z][a-z0-9-]*", re.I)
+FLAG = re.compile(r"(?<![\w-])--[a-z][a-z0-9.-]*[a-z0-9]", re.I)     # includes dotted flags: --alertmanager.url
 TOKEN = re.compile(r"[A-Za-z_][\w.\-/:=*<>~\"']*")
 STRIP = "\"'`.,;:()[]{}<>=*~"
 

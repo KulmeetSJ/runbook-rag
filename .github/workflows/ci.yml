@@ -1,0 +1,47 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: pgvector/pgvector:pg18
+        env:
+          POSTGRES_USER: rag
+          POSTGRES_DB: rag
+          POSTGRES_PASSWORD: ci-only
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U rag -d rag" --health-interval 2s --health-retries 30
+    env:
+      RAG_DB_URL: postgresql://rag:ci-only@localhost:5432/rag
+      FASTEMBED_CACHE_PATH: /home/runner/.cache/fastembed
+      HF_HUB_DISABLE_PROGRESS_BARS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: actions/cache@v4
+        with:
+          path: /home/runner/.cache/fastembed
+          key: fastembed-bge-small-v1
+      - name: Install
+        run: |
+          pip install -e ".[dev,mcp,anthropic]"
+          python -m spacy download en_core_web_md
+      - name: Ingest corpus (redact, chunk, embed)
+        run: rag ingest --strategy heading --strategy fixed512 --strategy fixed128
+      - name: Unit and integration tests
+        run: pytest -q
+      - name: Eval gate (retrieval live, answer evals from committed results)
+        run: rag gate

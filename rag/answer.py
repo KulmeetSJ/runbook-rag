@@ -28,7 +28,8 @@ Answer the question using only the documents in the user message.
 - Be brief: a direct answer, then the steps or reasons that support it.
 - If the documents do not answer the question, reply exactly: {ABSTAIN}"""
 
-CITE = re.compile(r"\[([a-z0-9][a-z0-9-]*[a-z0-9])\]")
+CITE = re.compile(r"\[([a-z][a-z0-9]*(?:-[a-z0-9]+)+)\]")   # doc ids always contain a hyphen; skips [1m], [5]
+CODE = re.compile(r"```.*?```|`[^`\n]*`", re.S)
 
 
 @dataclass
@@ -48,7 +49,8 @@ class Answer:
 
     @property
     def abstained(self) -> bool:
-        return self.text.strip().rstrip(".").lower() == ABSTAIN.rstrip(".").lower()
+        # The model sometimes prefixes the phrase ("The documents do not answer the question. Not in the runbooks.").
+        return ABSTAIN.rstrip(".").lower() in self.text.lower()
 
 
 def _escape(text: str) -> str:
@@ -70,7 +72,7 @@ def build_prompt(question: str, hits: list[retrieval.Hit]) -> str:
 
 
 def parse_citations(text: str, retrieved: set[str]) -> tuple[list[str], list[str]]:
-    cited = list(dict.fromkeys(CITE.findall(text)))
+    cited = list(dict.fromkeys(CITE.findall(CODE.sub(" ", text))))
     return [c for c in cited if c in retrieved], [c for c in cited if c not in retrieved]
 
 

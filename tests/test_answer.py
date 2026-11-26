@@ -29,8 +29,14 @@ def test_context_marks_untrusted_and_cannot_be_closed_from_inside():
 
 
 def test_citations_are_checked_against_retrieved_docs():
-    ok, unknown = answer.parse_citations("Do X [pf-a]. Also [pf-a] and [made-up]. Not a cite: [1].", {"pf-a"})
+    ok, unknown = answer.parse_citations(
+        "Do X [pf-a]. Also [pf-a] and [made-up]. Not cites: [1], `rate(x[1m])`, `a[pf-b]`.", {"pf-a"})
     assert ok == ["pf-a"] and unknown == ["made-up"]
+
+
+def test_abstention_tolerates_a_preamble():
+    a = answer.answer("q", [hit("pf-a")], FakeLLM("The documents do not answer the question. Not in the runbooks."))
+    assert a.abstained
 
 
 def test_answer_flow_and_abstention():
@@ -66,6 +72,8 @@ def test_guard_blocks_commands_missing_from_reviewed_runbooks():
     assert not bad.ok and bad.unknown == ["--reset-offsets", "--to-latest"]
     assert not guard.check("then pass --to-latest to the tool", vocab).ok      # flags outside code spans too
     assert guard.check("Not in the runbooks.", vocab).ok
+    assert guard.check("Use `amtool alert add x --alertmanager.url=http://localhost:9093`.",
+                       frozenset({"amtool", "alert", "add", "x", "--alertmanager.url", "http://localhost:9093"})).ok
 
 
 def test_guarded_answer_is_withheld_and_does_not_echo_the_command():
