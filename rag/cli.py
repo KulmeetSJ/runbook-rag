@@ -45,6 +45,30 @@ def search(
 
 
 @app.command()
+def ask(
+    question: str,
+    model: Annotated[str, typer.Option(help="ollama:<model> or anthropic:<model>")] = "ollama:qwen3:8b",
+    k: int = 5,
+    mode: Annotated[str, typer.Option(help="vector | lexical | hybrid")] = "hybrid",
+    index: Annotated[str, typer.Option(help="strategy:embedder")] = "heading:bge-small",
+    show_context: bool = False,
+):
+    """Answer a question from the runbooks, citing the documents used."""
+    from . import answer as answer_mod
+    from .llm import get_llm
+    a = answer_mod.ask(store.connect(), question, get_llm(model), index, mode, k)
+    if show_context:
+        typer.echo(answer_mod.build_context(a.hits) + "\n" + "-" * 60)
+    typer.echo(a.text + "\n")
+    retrieved = ", ".join(dict.fromkeys(h.doc_id + (" [UNTRUSTED]" if h.poisoned else "") for h in a.hits))
+    typer.echo(f"retrieved: {retrieved}")
+    if a.unknown_citations:
+        typer.echo(f"WARNING: cited documents that were not retrieved: {', '.join(a.unknown_citations)}")
+    c = a.completion
+    typer.echo(f"{c.model}: {c.input_tokens} in / {c.output_tokens} out tokens, {c.ms} ms")
+
+
+@app.command()
 def stats():
     """List the indexes in the store."""
     for name, chunks, docs in store.indexes(store.connect()):

@@ -30,8 +30,13 @@ class FastEmbed:
 
 @lru_cache(maxsize=4)
 def _load(model: str):
+    import os
+    from pathlib import Path
+
     from fastembed import TextEmbedding
-    return TextEmbedding(model)
+    # fastembed's default cache is the OS temp dir, which macOS clears; keep models somewhere durable.
+    cache = os.environ.get("FASTEMBED_CACHE_PATH") or str(Path.home() / ".cache" / "fastembed")
+    return TextEmbedding(model, cache_dir=cache)
 
 
 EMBEDDERS: dict[str, Embedder] = {

@@ -16,6 +16,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+anthropic = ["anthropic>=2.13"]
 
 [project.scripts]
 rag = "rag.cli:app"
