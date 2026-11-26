@@ -17,9 +17,11 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8"]
 anthropic = ["anthropic>=2.13"]
+mcp = ["mcp>=2.3,<3"]
 
 [project.scripts]
 rag = "rag.cli:app"
+rag-mcp = "rag.mcp_server:main"
 
 [build-system]
 requires = ["hatchling"]
